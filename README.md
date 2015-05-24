@@ -24,4 +24,5 @@ Vim Configuration
 *  ack https://github.com/mileszs/ack.vim (requires commandline ack)
 *  vimshell https://github.com/Shougo/vimshell.vim 
 *  autopairs https://github.com/jiangmiao/auto-pairs
+*  vim-gitgutter https://github.com/airblade/vim-gitgutter
 

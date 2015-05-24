@@ -29,6 +29,7 @@ NeoBundle 'corntrace/bufexplorer'
 NeoBundle 'mileszs/ack.vim'
 "NeoBundle 'fatih/vim-go'
 NeoBundle 'jiangmiao/auto-pairs'
+NeoBundle 'airblade/vim-gitgutter'
 
 NeoBundle 'Shougo/vimproc.vim', {
             \ 'build' : {
@@ -116,6 +117,8 @@ noremap <leader>gs :Gstatus<cr>
 noremap <leader>gp :Gpush<cr>
 
 noremap <leader>sh :VimShell<cr>
+
+let g:gitgutter_map_keys = 0    " Disable GitGutter shortcuts"
 
 
 " Shortcuts ---------------------------------
