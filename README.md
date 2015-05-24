@@ -8,6 +8,7 @@ Vim Configuration
 * ,be           Buffer Explorer
 * ,<SPACE>      Clear search highlighting
 * ,sh           Vim Shell
+* ,n            Toggle NerdTree
 
 ## Used plugins
 *  vim-airline https://github.com/bling/vim-airline
@@ -26,4 +27,5 @@ Vim Configuration
 *  autopairs https://github.com/jiangmiao/auto-pairs
 *  vim-gitgutter https://github.com/airblade/vim-gitgutter
 *  vim-go https://github.com/fatih/vim-go
+*  nerdtree https://github.com/scrooloose/nerdtree
 

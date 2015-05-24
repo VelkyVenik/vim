@@ -30,6 +30,7 @@ NeoBundle 'mileszs/ack.vim'
 NeoBundle 'fatih/vim-go'
 NeoBundle 'jiangmiao/auto-pairs'
 NeoBundle 'airblade/vim-gitgutter'
+NeoBundle 'scrooloose/nerdtree'
 
 NeoBundle 'Shougo/vimproc.vim', {
             \ 'build' : {
@@ -218,3 +219,8 @@ endif
 " For perlomni.vim setting.
 " https://github.com/c9s/perlomni.vim
 let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
+
+
+" NerdTree ------------------------------
+noremap <Leader>n :NERDTreeToggle<CR>
+
