@@ -20,4 +20,5 @@ Vim Configuration
 *  neocomplete https://github.com/Shougo/neocomplete.vim
 *  vimproc https://github.com/Shougo/vimproc.vim
 *  vim-colorschemes https://github.com/flazz/vim-colorschemes
+*  ack https://github.com/mileszs/ack.vim (requires commandline ack)
 

@@ -26,6 +26,7 @@ NeoBundle 'bling/vim-airline'
 NeoBundle 'flazz/vim-colorschemes'
 "NeoBundle 'Shougo/vimshell'
 NeoBundle 'corntrace/bufexplorer'
+NeoBundle 'mileszs/ack.vim'
 
 NeoBundle 'Shougo/vimproc.vim', {
             \ 'build' : {
