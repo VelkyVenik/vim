@@ -2,8 +2,6 @@
 
 D=$(pwd)
 
-if [-d "./vim"]; then mkdir vim
-
 ln -s $D/vimrc ~/.vimrc
 ln -s $D/vim ~/.vim
 
