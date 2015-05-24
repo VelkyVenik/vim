@@ -27,7 +27,7 @@ NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'Shougo/vimshell'
 NeoBundle 'corntrace/bufexplorer'
 NeoBundle 'mileszs/ack.vim'
-"NeoBundle 'fatih/vim-go'
+NeoBundle 'fatih/vim-go'
 NeoBundle 'jiangmiao/auto-pairs'
 NeoBundle 'airblade/vim-gitgutter'
 
