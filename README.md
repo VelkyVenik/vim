@@ -9,13 +9,13 @@ Vim Configuration
 * ,<SPACE>      Clear search highlighting
 
 ## Used plugins
-*  vim-airline
-*  ctrlp.vim
-*  bufexplorer
-*  neobundle.vim
-*  vim-coffee-script
-*  vim-fugitive
-*  neosnippet.vim
-*  neosnippet-snippets
-*  neocomplete.vim
-*  vimproc.vim
+*  vim-airline https://github.com/bling/vim-airline
+*  ctrlp.vim http://kien.github.io/ctrlp.vim/
+*  bufexplorer https://github.com/corntrace/bufexplorer
+*  neobundle https://github.com/Shougo/neobundle.vim
+*  vim-coffee-script https://github.com/kchmck/vim-coffee-script
+*  vim-fugitive https://github.com/tpope/vim-fugitive
+*  neosnippet https://github.com/Shougo/neosnippet.vim
+*  neosnippet-snippets https://github.com/Shougo/neosnippet-snippets
+*  neocomplete https://github.com/Shougo/neocomplete.vim
+*  vimproc https://github.com/Shougo/vimproc.vim
