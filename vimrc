@@ -28,6 +28,7 @@ NeoBundle 'Shougo/vimshell'
 NeoBundle 'corntrace/bufexplorer'
 NeoBundle 'mileszs/ack.vim'
 "NeoBundle 'fatih/vim-go'
+NeoBundle 'jiangmiao/auto-pairs'
 
 NeoBundle 'Shougo/vimproc.vim', {
             \ 'build' : {

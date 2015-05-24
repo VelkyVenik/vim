@@ -23,3 +23,5 @@ Vim Configuration
 *  vim-colorschemes https://github.com/flazz/vim-colorschemes
 *  ack https://github.com/mileszs/ack.vim (requires commandline ack)
 *  vimshell https://github.com/Shougo/vimshell.vim 
+*  autopairs https://github.com/jiangmiao/auto-pairs
+
