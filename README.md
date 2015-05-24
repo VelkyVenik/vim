@@ -19,3 +19,5 @@ Vim Configuration
 *  neosnippet-snippets https://github.com/Shougo/neosnippet-snippets
 *  neocomplete https://github.com/Shougo/neocomplete.vim
 *  vimproc https://github.com/Shougo/vimproc.vim
+*  vim-colorschemes https://github.com/flazz/vim-colorschemes
+
