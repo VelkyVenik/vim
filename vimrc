@@ -24,9 +24,10 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'flazz/vim-colorschemes'
-"NeoBundle 'Shougo/vimshell'
+NeoBundle 'Shougo/vimshell'
 NeoBundle 'corntrace/bufexplorer'
 NeoBundle 'mileszs/ack.vim'
+"NeoBundle 'fatih/vim-go'
 
 NeoBundle 'Shougo/vimproc.vim', {
             \ 'build' : {
@@ -88,6 +89,7 @@ set wildignore=*.swp,*.bak,*.pyc,*.class
 set title               " change the terminal's title
 set visualbell          " don't beep
 set noerrorbells        " don't beep
+set hidden              " unsaved buffers can be hidden
 
 set nobackup            " no backup files
 set noswapfile          " no swap files
@@ -111,6 +113,8 @@ nnoremap <C-l> <C-w>l
 
 noremap <leader>gs :Gstatus<cr>
 noremap <leader>gp :Gpush<cr>
+
+noremap <leader>sh :VimShell<cr>
 
 
 " Shortcuts ---------------------------------

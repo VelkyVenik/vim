@@ -7,6 +7,7 @@ Vim Configuration
 * ,gp           Git Push
 * ,be           Buffer Explorer
 * ,<SPACE>      Clear search highlighting
+* ,sh           Vim Shell
 
 ## Used plugins
 *  vim-airline https://github.com/bling/vim-airline
@@ -21,4 +22,4 @@ Vim Configuration
 *  vimproc https://github.com/Shougo/vimproc.vim
 *  vim-colorschemes https://github.com/flazz/vim-colorschemes
 *  ack https://github.com/mileszs/ack.vim (requires commandline ack)
-
+*  vimshell https://github.com/Shougo/vimshell.vim 
