@@ -1,0 +1,121 @@
+"NeoBundle Scripts-----------------------------
+if has('vim_starting')
+  if &compatible
+    set nocompatible               " Be iMproved
+  endif
+
+  " Required:
+  set runtimepath+=$HOME/.vim/bundle/neobundle.vim/
+endif
+
+" Required:
+call neobundle#begin(expand('$HOME/.vim/bundle'))
+
+" Let NeoBundle manage NeoBundle
+" Required:
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+" Add or remove your Bundles here:
+NeoBundle 'Shougo/neosnippet.vim'
+NeoBundle 'Shougo/neosnippet-snippets'
+NeoBundle 'Shougo/neocomplete.vim'
+NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'bling/vim-airline'
+"NeoBundle 'flazz/vim-colorschemes'
+"NeoBundle 'Shougo/vimshell'
+NeoBundle 'corntrace/bufexplorer'
+
+NeoBundle 'Shougo/vimproc.vim', {
+            \ 'build' : {
+            \     'windows' : 'tools\\update-dll-mingw',
+            \     'cygwin' : 'make -f make_cygwin.mak',
+            \     'mac' : 'make -f make_mac.mak',
+            \     'linux' : 'make',
+            \     'unix' : 'gmake',
+            \    },
+            \ }
+
+
+" Required:
+call neobundle#end()
+
+" Required:
+filetype plugin indent on
+
+" If there are uninstalled bundles found on startup,
+" this will conveniently prompt you to install them.
+NeoBundleCheck
+"End NeoBundle Scripts-------------------------
+
+
+syntax on               " switch syntax highlighting on
+set mouse=a             " enable mouse
+let mapleader = ","     " change map leader
+
+set tabstop=4           " a tab is four spaces
+set shiftwidth=4        " number of spaces to use for autoindenting
+set shiftround          " use multiple of shiftwidth when indenting with '<' and '>'
+set expandtab           " replace tab with spaces
+set softtabstop=4       " how many spaces for tab
+
+set nowrap              " don't wrap lines
+set backspace=indent,eol,start
+                        " allow backspacing over everything in insert mode
+set autoindent          " always set autoindenting on
+set copyindent          " copy the previous indentation on autoindenting
+set number              " always show line numbers
+
+
+set ignorecase          " ignore case when searching
+set smartcase           " ignore case if search pattern is all lowercase,
+                        " case-sensitive otherwise
+set smarttab            " insert tabs on the start of a line according to
+                        "  shiftwidth, not tabstop
+set hlsearch            " highlight search terms
+set incsearch           " show search matches as you type
+set showmatch           " set show matching parenthesis
+nnoremap <leader><space> :noh<cr>
+                        " hide search highlighting
+set gdefault            " applies substitutions globally on lines - :%s/foo/bar/g
+
+
+set history=1000        " remember more commands and search history
+set undolevels=1000     " use many muchos levels of undo
+set wildignore=*.swp,*.bak,*.pyc,*.class
+set title               " change the terminal's title
+set visualbell          " don't beep
+set noerrorbells        " don't beep
+
+set nobackup            " no backup files
+set noswapfile          " no swap files
+
+set laststatus=2        " show statusline with AirLine
+
+set background=dark
+colorscheme desert
+"colorscheme solarized
+set guifont=Menlo\ Regular:h14
+
+
+set pastetoggle=<F2>    " enable/disable formating for copy&pase
+
+" changing windows 
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+
+" CtrlP configuration
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
+let g:ctrlp_working_path_mode = 'ra'
+
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+"set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
+
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+
