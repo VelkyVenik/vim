@@ -98,6 +98,7 @@ colorscheme desert
 "colorscheme solarized
 set guifont=Menlo\ Regular:h14
 
+" Shortcuts ---------------------------------
 
 set pastetoggle=<F2>    " enable/disable formating for copy&pase
 
@@ -107,6 +108,11 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+noremap <leader>gs :Gstatus<cr>
+noremap <leader>gp :Gpush<cr>
+
+
+" Shortcuts ---------------------------------
 
 " CtrlP configuration
 let g:ctrlp_map = '<c-p>'
