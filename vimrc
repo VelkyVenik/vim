@@ -39,8 +39,8 @@ NeoBundle 'fatih/vim-go'
 NeoBundle 'jiangmiao/auto-pairs'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'scrooloose/nerdtree'
-
 NeoBundle 'chriskempson/base16-vim'
+NeoBundle 'scrooloose/syntastic'
 
 " I do not have working DLL for Windows
 if !has('win32')
@@ -246,4 +246,10 @@ let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 
 " NerdTree ------------------------------
 noremap <Leader>n :NERDTreeToggle<CR>
+
+" Syntastic -----------------------------
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
