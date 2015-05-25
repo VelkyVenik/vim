@@ -1,4 +1,11 @@
 "NeoBundle Scripts-----------------------------
+
+" I have problems with my company Windows notebook with the home folder, it's
+" on network so Vim is very very very slow then :(
+if has('win32')
+	let $HOME = $VIM
+endif
+
 if has('vim_starting')
   if &compatible
     set nocompatible               " Be iMproved
@@ -32,7 +39,9 @@ NeoBundle 'jiangmiao/auto-pairs'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'scrooloose/nerdtree'
 
-NeoBundle 'Shougo/vimproc.vim', {
+" I do not have working DLL for Windows
+if !has('win32')
+    NeoBundle 'Shougo/vimproc.vim', {
             \ 'build' : {
             \     'windows' : 'tools\\update-dll-mingw',
             \     'cygwin' : 'make -f make_cygwin.mak',
@@ -41,7 +50,7 @@ NeoBundle 'Shougo/vimproc.vim', {
             \     'unix' : 'gmake',
             \    },
             \ }
-
+endif
 
 " Required:
 call neobundle#end()
@@ -99,10 +108,14 @@ set noswapfile          " no swap files
 
 set laststatus=2        " show statusline with AirLine
 
-set background=dark
-colorscheme desert
-"colorscheme solarized
-set guifont=Menlo\ Regular:h14
+
+if has("gui_running")
+    set lines=70 columns=150
+"    set guifont=Menlo\ Regular:h14
+    set background=dark
+    colorscheme desert
+    "colorscheme solarized
+endif
 
 " Shortcuts ---------------------------------
 
