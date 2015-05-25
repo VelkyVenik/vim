@@ -14,7 +14,6 @@ Vim Configuration
 *  [vim-airline] (https://github.com/bling/vim-airline)
 *  [powerline-fonts] (https://github.com/powerline/fonts) (requires installation from fonts bundle)
 *  [ctrlp.vim] (http://kien.github.io/ctrlp.vim/)
-*  [bufexplorer] (https://github.com/corntrace/bufexplorer)
 *  [neobundle] (https://github.com/Shougo/neobundle.vim)
 *  [vim-coffee-script] (https://github.com/kchmck/vim-coffee-script)
 *  [vim-fugitive] (https://github.com/tpope/vim-fugitive)
@@ -31,4 +30,8 @@ Vim Configuration
 *  [base16-vim] (https://github.com/chriskempson/base16-vim)
 *  [syntastic] (https://github.com/scrooloose/syntastic)
 *  [seti] (https://github.com/trusktr/seti.vim)
+*  [vim-ctrlspace] (https://github.com/szw/vim-ctrlspace)
+
+## Unused plugins
+*  [bufexplorer] (https://github.com/corntrace/bufexplorer)
 *  [vim-bufferline] (https://github.com/bling/vim-bufferline)

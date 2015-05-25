@@ -1,5 +1,3 @@
-"NeoBundle Scripts-----------------------------
-
 if has('win32')
     " I have problems with my company Windows notebook with the home folder, it's
     " on network so Vim is very very very slow then :(
@@ -7,6 +5,8 @@ if has('win32')
     
     set langmenu=en_US.UTF-8    " sets the language of the menu (gvim)
 endif
+
+"NeoBundle Scripts-----------------------------
 
 if has('vim_starting')
   if &compatible
@@ -33,7 +33,7 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'powerline/fonts'
-NeoBundle 'corntrace/bufexplorer'
+"NeoBundle 'corntrace/bufexplorer'
 NeoBundle 'mileszs/ack.vim'
 NeoBundle 'fatih/vim-go'
 NeoBundle 'jiangmiao/auto-pairs'
@@ -42,7 +42,8 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'chriskempson/base16-vim'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'trusktr/seti.vim'
-NeoBundle 'bling/vim-bufferline'
+"NeoBundle 'bling/vim-bufferline'
+NeoBundle 'szw/vim-ctrlspace'
 
 " I do not have working DLL for Windows
 if !has('win32')
@@ -147,8 +148,6 @@ noremap <leader>sh :VimShell<cr>
 
 let g:gitgutter_map_keys = 0    " Disable GitGutter shortcuts"
 
-
-" Shortcuts ---------------------------------
 
 " CtrlP configuration ----------------------
 let g:ctrlp_map = '<c-p>'
@@ -261,5 +260,3 @@ if has('gui_running') && has('mac')
     " use Powerline fonts - must be installed from font bundle
     let g:airline_powerline_fonts = 1
 endif
-
-let g:bufferline_echo = 0
