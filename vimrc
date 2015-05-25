@@ -123,7 +123,8 @@ if has("gui_running")
     set guioptions-=m               "remove menu bar
 
     set background=dark             " colors
-    colorscheme desert
+    "colorscheme desert
+    colorscheme base16-bespin
 endif
 
 " Shortcuts ---------------------------------
