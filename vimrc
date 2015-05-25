@@ -40,6 +40,8 @@ NeoBundle 'jiangmiao/auto-pairs'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'scrooloose/nerdtree'
 
+NeoBundle 'chriskempson/base16-vim'
+
 " I do not have working DLL for Windows
 if !has('win32')
     NeoBundle 'Shougo/vimshell'
@@ -104,6 +106,7 @@ set title               " change the terminal's title
 set visualbell          " don't beep
 set noerrorbells        " don't beep
 set hidden              " unsaved buffers can be hidden
+set noshowmode          " don't show mode, we have AirLine
 
 set nobackup            " no backup files
 set noswapfile          " no swap files

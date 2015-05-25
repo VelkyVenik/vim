@@ -28,4 +28,5 @@ Vim Configuration
 *  vim-gitgutter https://github.com/airblade/vim-gitgutter
 *  vim-go https://github.com/fatih/vim-go
 *  nerdtree https://github.com/scrooloose/nerdtree
+*  base16-vim https://github.com/chriskempson/base16-vim
 
