@@ -40,6 +40,7 @@ NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'chriskempson/base16-vim'
 NeoBundle 'scrooloose/syntastic'
+NeoBundle 'trusktr/seti.vim'
 
 " I do not have working DLL for Windows
 if !has('win32')
@@ -123,7 +124,8 @@ if has("gui_running")
 
     set background=dark             " colors
     "colorscheme desert
-    colorscheme base16-bespin
+    "colorscheme base16-bespin
+    colorscheme seti
 endif
 
 " Shortcuts ---------------------------------
