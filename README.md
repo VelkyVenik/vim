@@ -12,6 +12,7 @@ Vim Configuration
 
 ## Used plugins
 *  [vim-airline] (https://github.com/bling/vim-airline)
+*  [powerline-fonts] (https://github.com/powerline/fonts) (requires installation from fonts bundle)
 *  [ctrlp.vim] (http://kien.github.io/ctrlp.vim/)
 *  [bufexplorer] (https://github.com/corntrace/bufexplorer)
 *  [neobundle] (https://github.com/Shougo/neobundle.vim)
@@ -30,3 +31,4 @@ Vim Configuration
 *  [base16-vim] (https://github.com/chriskempson/base16-vim)
 *  [syntastic] (https://github.com/scrooloose/syntastic)
 *  [seti] (https://github.com/trusktr/seti.vim)
+*  [vim-bufferline] (https://github.com/bling/vim-bufferline)

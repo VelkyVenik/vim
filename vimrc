@@ -32,6 +32,7 @@ NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'bling/vim-airline'
+NeoBundle 'powerline/fonts'
 NeoBundle 'corntrace/bufexplorer'
 NeoBundle 'mileszs/ack.vim'
 NeoBundle 'fatih/vim-go'
@@ -41,6 +42,7 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'chriskempson/base16-vim'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'trusktr/seti.vim'
+NeoBundle 'bling/vim-bufferline'
 
 " I do not have working DLL for Windows
 if !has('win32')
@@ -254,3 +256,10 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+" AirLine -------------------------------
+if has('gui_running') && has('mac')
+    " use Powerline fonts - must be installed from font bundle
+    let g:airline_powerline_fonts = 1
+endif
+
+let g:bufferline_echo = 0
