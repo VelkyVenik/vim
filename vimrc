@@ -1,9 +1,11 @@
 "NeoBundle Scripts-----------------------------
 
-" I have problems with my company Windows notebook with the home folder, it's
-" on network so Vim is very very very slow then :(
 if has('win32')
+    " I have problems with my company Windows notebook with the home folder, it's
+    " on network so Vim is very very very slow then :(
 	let $HOME = $USERPROFILE
+    
+    set langmenu=en_US.UTF-8    " sets the language of the menu (gvim)
 endif
 
 if has('vim_starting')
@@ -110,11 +112,15 @@ set laststatus=2        " show statusline with AirLine
 
 
 if has("gui_running")
-    set lines=70 columns=150
-"    set guifont=Menlo\ Regular:h14
-    set background=dark
+    set lines=70 columns=150        " window size
+
+    set guifont=Menlo\ Regular:h14  " default font
+    set guioptions-=T               "remove toolbar
+    set guioptions-=r               "remove right-hand scroll ba
+    set guioptions-=m               "remove menu bar
+
+    set background=dark             " colors
     colorscheme desert
-    "colorscheme solarized
 endif
 
 " Shortcuts ---------------------------------
