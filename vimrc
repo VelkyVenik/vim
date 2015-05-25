@@ -3,7 +3,7 @@
 " I have problems with my company Windows notebook with the home folder, it's
 " on network so Vim is very very very slow then :(
 if has('win32')
-	let $HOME = $VIM
+	let $HOME = $USERPROFILE
 endif
 
 if has('vim_starting')
