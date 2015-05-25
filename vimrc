@@ -31,7 +31,6 @@ NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'flazz/vim-colorschemes'
-NeoBundle 'Shougo/vimshell'
 NeoBundle 'corntrace/bufexplorer'
 NeoBundle 'mileszs/ack.vim'
 NeoBundle 'fatih/vim-go'
@@ -41,6 +40,7 @@ NeoBundle 'scrooloose/nerdtree'
 
 " I do not have working DLL for Windows
 if !has('win32')
+    NeoBundle 'Shougo/vimshell'
     NeoBundle 'Shougo/vimproc.vim', {
             \ 'build' : {
             \     'windows' : 'tools\\update-dll-mingw',
