@@ -10,6 +10,12 @@ Vim Configuration
 * ,sh           Vim Shell
 * ,n            Toggle NerdTree
 
+### Vim-Go
+* ,gr           Go Run
+* ,gb           Go Build
+* ,gds          Go Def Split
+* ,gdv          Go Def Split Vertical
+
 ## Used plugins
 *  [vim-airline] (https://github.com/bling/vim-airline)
 *  [powerline-fonts] (https://github.com/powerline/fonts) (requires installation from fonts bundle)
