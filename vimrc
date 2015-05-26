@@ -2,7 +2,7 @@ if has('win32')
     " I have problems with my company Windows notebook with the home folder, it's
     " on network so Vim is very very very slow then :(
 	let $HOME = $USERPROFILE
-    
+
     set langmenu=en_US.UTF-8    " sets the language of the menu (gvim)
 endif
 
@@ -135,7 +135,7 @@ endif
 
 set pastetoggle=<F2>    " enable/disable formating for copy&pase
 
-" changing windows 
+" changing windows
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
