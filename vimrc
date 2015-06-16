@@ -44,6 +44,7 @@ NeoBundle 'scrooloose/syntastic'
 NeoBundle 'trusktr/seti.vim'
 "NeoBundle 'bling/vim-bufferline'
 NeoBundle 'szw/vim-ctrlspace'
+NeoBundle 'klen/python-mode.git'
 
 " I do not have working DLL for Windows
 if !has('win32')
@@ -274,11 +275,13 @@ au FileType go nmap <Leader>gdt <Plug>(go-def-tab)
 au FileType go nmap <Leader>gs <Plug>(go-implements)
 
 " Syntax highlighting, does it work? :)
-let g:go_highlight_functions = 1
-let g:go_highlight_methods = 1
-let g:go_highlight_structs = 1
-let g:go_highlight_operators = 1
-let g:go_highlight_build_constraints = 1
+let g:go_highlight_functions = 0
+let g:go_highlight_methods = 0
+let g:go_highlight_structs = 0
+let g:go_highlight_operators = 0
+let g:go_highlight_build_constraints = 0
 
 let g:go_fmt_fail_silently = 1          " Use syntastic instead
 
+" Python-Mode
+let g:pymode_rope_goto_definition_bind = '<leader>pg'
