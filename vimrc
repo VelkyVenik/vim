@@ -38,13 +38,14 @@ NeoBundle 'mileszs/ack.vim'
 NeoBundle 'fatih/vim-go'
 NeoBundle 'jiangmiao/auto-pairs'
 NeoBundle 'airblade/vim-gitgutter'
-NeoBundle 'scrooloose/nerdtree'
+"NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'chriskempson/base16-vim'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'trusktr/seti.vim'
 "NeoBundle 'bling/vim-bufferline'
 NeoBundle 'szw/vim-ctrlspace'
 NeoBundle 'klen/python-mode.git'
+NeoBundle 'scrooloose/nerdcommenter'
 
 " I do not have working DLL for Windows
 if !has('win32')
