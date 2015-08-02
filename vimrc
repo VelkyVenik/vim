@@ -4,6 +4,8 @@ if has('win32')
 	let $HOME = $USERPROFILE
 
     set langmenu=en_US.UTF-8    " sets the language of the menu (gvim)
+else
+    set shell=/bin/bash
 endif
 
 "NeoBundle Scripts-----------------------------
