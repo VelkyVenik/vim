@@ -48,6 +48,7 @@ NeoBundle 'trusktr/seti.vim'
 NeoBundle 'szw/vim-ctrlspace'
 NeoBundle 'klen/python-mode.git'
 NeoBundle 'scrooloose/nerdcommenter'
+NeoBundle 'dag/vim-fish'
 
 " I do not have working DLL for Windows
 if !has('win32')

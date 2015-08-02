@@ -22,6 +22,7 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'trusktr/seti.vim'
+NeoBundle 'dag/vim-fish'
 
 " Required:
 call neobundle#end()

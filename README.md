@@ -38,6 +38,7 @@ Vim Configuration
 *  [seti] (https://github.com/trusktr/seti.vim)
 *  [vim-ctrlspace] (https://github.com/szw/vim-ctrlspace)
 *  [nerdcommenter] (https://github.com/scrooloose/nerdcommenter)
+*  [vim-fish] (https://github.com/dag/vim-fish)
 
 ## Unused plugins
 *  [bufexplorer] (https://github.com/corntrace/bufexplorer)
