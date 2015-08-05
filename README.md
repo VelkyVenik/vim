@@ -39,6 +39,7 @@ Vim Configuration
 *  [vim-ctrlspace] (https://github.com/szw/vim-ctrlspace)
 *  [nerdcommenter] (https://github.com/scrooloose/nerdcommenter)
 *  [vim-fish] (https://github.com/dag/vim-fish)
+*  [vim-avr] (https://github.com/VelkyVenik/vim-avr)
 
 ## Unused plugins
 *  [bufexplorer] (https://github.com/corntrace/bufexplorer)
