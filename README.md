@@ -10,6 +10,7 @@ Vim Configuration
 * ,sh           Vim Shell
 * ,n            Toggle NerdTree
 * ,ci           Toggle comment
+* ,af           AutoFormat
 
 ### Vim-Go
 * ,gr           Go Run
@@ -40,6 +41,7 @@ Vim Configuration
 *  [nerdcommenter] (https://github.com/scrooloose/nerdcommenter)
 *  [vim-fish] (https://github.com/dag/vim-fish)
 *  [vim-avr] (https://github.com/VelkyVenik/vim-avr)
+*  [autoformat] (https://github.com/Chiel92/vim-autoformat) (requires formating tools, e.g. npm install -g js-beautify)
 
 ## Unused plugins
 *  [bufexplorer] (https://github.com/corntrace/bufexplorer)

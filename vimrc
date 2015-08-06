@@ -50,6 +50,7 @@ NeoBundle 'klen/python-mode.git'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'dag/vim-fish'
 NeoBundle 'VelkyVenik/vim-avr'
+NeoBundle 'Chiel92/vim-autoformat'
 
 " I do not have working DLL for Windows
 if !has('win32')
@@ -292,3 +293,7 @@ let g:go_fmt_fail_silently = 1          " Use syntastic instead
 
 " Python-Mode
 let g:pymode_rope_goto_definition_bind = '<leader>pg'
+
+" VIM-AUTOFORMAT ------------------------
+noremap <Leader>af :Autoformat<CR>
+
