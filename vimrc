@@ -4,6 +4,8 @@ if has('win32')
 	let $HOME = $USERPROFILE
 
     set langmenu=en_US.UTF-8    " sets the language of the menu (gvim)
+else
+    set shell=/bin/bash
 endif
 
 "NeoBundle Scripts-----------------------------
@@ -46,7 +48,8 @@ NeoBundle 'trusktr/seti.vim'
 NeoBundle 'szw/vim-ctrlspace'
 NeoBundle 'klen/python-mode.git'
 NeoBundle 'scrooloose/nerdcommenter'
-NeoBundle 'Chiel92/vim-autoformat'
+NeoBundle 'dag/vim-fish'
+NeoBundle 'VelkyVenik/vim-avr'
 
 " I do not have working DLL for Windows
 if !has('win32')
@@ -251,10 +254,6 @@ let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 
 " NerdTree ------------------------------
 noremap <Leader>n :NERDTreeToggle<CR>
-
-" VIM-AUTOFORMAT ------------------------
-noremap <Leader>af :Autoformat<CR>
-
 
 " Syntastic -----------------------------
 let g:syntastic_always_populate_loc_list = 1
