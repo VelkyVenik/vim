@@ -51,6 +51,7 @@ NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'dag/vim-fish'
 NeoBundle 'VelkyVenik/vim-avr'
 NeoBundle 'Chiel92/vim-autoformat'
+NeoBundle 'pangloss/vim-javascript'
 
 " I do not have working DLL for Windows
 if !has('win32')

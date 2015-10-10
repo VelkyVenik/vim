@@ -42,6 +42,7 @@ Vim Configuration
 *  [vim-fish] (https://github.com/dag/vim-fish)
 *  [vim-avr] (https://github.com/VelkyVenik/vim-avr)
 *  [autoformat] (https://github.com/Chiel92/vim-autoformat) (requires formating tools, e.g. npm install -g js-beautify)
+*  [vim-javascript] (https://github.com/pangloss/vim-javascript)
 
 ## Unused plugins
 *  [bufexplorer] (https://github.com/corntrace/bufexplorer)
