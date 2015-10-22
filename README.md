@@ -6,15 +6,15 @@ Vim Configuration
 * ,gs           Git Status
 * ,gp           Git Push
 * ,be           Buffer Explorer
-* ,<SPACE>      Clear search highlighting
+* ,SPACE      Clear search highlighting
 * ,sh           Vim Shell
 * ,n            Toggle NerdTree
 * ,ci           Toggle comment
 * ,af           AutoFormat
 
 ### CtrlSpace
-* <Ctrl>P       Fuzzy file search 
-* <Ctrl>Space   Buffer list
+* Ctrl P       Fuzzy file search 
+* Ctrl Space   Buffer list
 * b             Toogle bookmark list
 
 ### Vim-Go
