@@ -30,28 +30,30 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/neosnippet.vim'
 NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'Shougo/neocomplete.vim'
-NeoBundle 'kchmck/vim-coffee-script'
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'scrooloose/nerdcommenter'
+NeoBundle 'scrooloose/syntastic'
+NeoBundle 'Chiel92/vim-autoformat'
 NeoBundle 'bling/vim-airline'
+NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'powerline/fonts'
-"NeoBundle 'corntrace/bufexplorer'
 NeoBundle 'mileszs/ack.vim'
 NeoBundle 'fatih/vim-go'
 NeoBundle 'jiangmiao/auto-pairs'
 NeoBundle 'airblade/vim-gitgutter'
-"NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'chriskempson/base16-vim'
-NeoBundle 'scrooloose/syntastic'
-NeoBundle 'trusktr/seti.vim'
-"NeoBundle 'bling/vim-bufferline'
 NeoBundle 'szw/vim-ctrlspace'
-NeoBundle 'klen/python-mode.git'
-NeoBundle 'scrooloose/nerdcommenter'
-NeoBundle 'dag/vim-fish'
-NeoBundle 'VelkyVenik/vim-avr'
-NeoBundle 'Chiel92/vim-autoformat'
-NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'trusktr/seti.vim'
+
+NeoBundleLazy 'kchmck/vim-coffee-script'
+NeoBundleLazy 'klen/python-mode.git'
+NeoBundleLazy 'dag/vim-fish'
+NeoBundleLazy 'VelkyVenik/vim-avr'
+NeoBundleLazy 'pangloss/vim-javascript'
+
+"NeoBundle 'corntrace/bufexplorer'
+"NeoBundle 'scrooloose/nerdtree'
+"NeoBundle 'chriskempson/base16-vim'
+"NeoBundle 'bling/vim-bufferline'
 
 " I do not have working DLL for Windows
 if !has('win32')
@@ -264,6 +266,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 " ignore empty tags
 let g:syntastic_html_tidy_ignore_errors = [ 'trimming empty' ] 
+"let g:syntastic_javascript_checkers = ['eslint']
 
 " AirLine -------------------------------
 if has('gui_running') && has('mac')
