@@ -34,7 +34,7 @@ NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'Chiel92/vim-autoformat'
 NeoBundle 'bling/vim-airline'
-NeoBundle 'kien/ctrlp.vim'
+"NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'powerline/fonts'
 NeoBundle 'mileszs/ack.vim'
@@ -158,15 +158,15 @@ let g:gitgutter_map_keys = 0    " Disable GitGutter shortcuts"
 
 
 " CtrlP configuration ----------------------
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
+"let g:ctrlp_map = '<c-p>'
+"let g:ctrlp_cmd = 'CtrlPBuffer'
 
-let g:ctrlp_working_path_mode = 'ra'
+"let g:ctrlp_working_path_mode = 'ra'
 
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+"set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
 "set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
 
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+"let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 
 
 " NeoComplete -------------------------------
@@ -304,3 +304,8 @@ let g:pymode_rope_goto_definition_bind = '<leader>pg'
 " VIM-AUTOFORMAT ------------------------
 noremap <Leader>af :Autoformat<CR>
 
+" CtrlSpace
+if executable("ag")
+    let g:CtrlSpaceGlobCommand = 'ag -l --nocolor -g ""'
+endif
+nnoremap <silent><C-p> :CtrlSpace O<CR>

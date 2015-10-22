@@ -12,6 +12,11 @@ Vim Configuration
 * ,ci           Toggle comment
 * ,af           AutoFormat
 
+### CtrlSpace
+* <Ctrl>P       Fuzzy file search 
+* <Ctrl>Space   Buffer list
+* b             Toogle bookmark list
+
 ### Vim-Go
 * ,gr           Go Run
 * ,gb           Go Build
@@ -21,7 +26,6 @@ Vim Configuration
 ## Used plugins
 *  [vim-airline] (https://github.com/bling/vim-airline)
 *  [powerline-fonts] (https://github.com/powerline/fonts) (requires installation from fonts bundle)
-*  [ctrlp.vim] (http://kien.github.io/ctrlp.vim/)
 *  [neobundle] (https://github.com/Shougo/neobundle.vim)
 *  [vim-coffee-script] (https://github.com/kchmck/vim-coffee-script)
 *  [vim-fugitive] (https://github.com/tpope/vim-fugitive)
@@ -46,3 +50,4 @@ Vim Configuration
 *  [nerdtree-git-plugin] (https://github.com/Xuyuanp/nerdtree-git-plugin)
 
 ## Unused plugins
+*  [ctrlp.vim] (http://kien.github.io/ctrlp.vim/)
