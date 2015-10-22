@@ -34,7 +34,6 @@ Vim Configuration
 *  [autopairs] (https://github.com/jiangmiao/auto-pairs)
 *  [vim-gitgutter] (https://github.com/airblade/vim-gitgutter)
 *  [vim-go] (https://github.com/fatih/vim-go)
-*  [base16-vim] (https://github.com/chriskempson/base16-vim)
 *  [syntastic] (https://github.com/scrooloose/syntastic)
 *  [seti] (https://github.com/trusktr/seti.vim)
 *  [vim-ctrlspace] (https://github.com/szw/vim-ctrlspace)
@@ -48,3 +47,4 @@ Vim Configuration
 *  [bufexplorer] (https://github.com/corntrace/bufexplorer)
 *  [vim-bufferline] (https://github.com/bling/vim-bufferline)
 *  [nerdtree] (https://github.com/scrooloose/nerdtree)
+*  [base16-vim] (https://github.com/chriskempson/base16-vim)
