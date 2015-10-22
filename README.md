@@ -5,7 +5,6 @@ Vim Configuration
 ## Usefull commands:
 * ,gs           Git Status
 * ,gp           Git Push
-* ,be           Buffer Explorer
 * ,SPACE      Clear search highlighting
 * ,sh           Vim Shell
 * ,n            Toggle NerdTree
