@@ -43,17 +43,15 @@ NeoBundle 'jiangmiao/auto-pairs'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'szw/vim-ctrlspace'
 NeoBundle 'trusktr/seti.vim'
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'Xuyuanp/nerdtree-git-plugin'
+"NeoBundle 'jistr/vim-nerdtree-tabs'
 
 NeoBundleLazy 'kchmck/vim-coffee-script'
 NeoBundleLazy 'klen/python-mode.git'
 NeoBundleLazy 'dag/vim-fish'
 NeoBundleLazy 'VelkyVenik/vim-avr'
 NeoBundleLazy 'pangloss/vim-javascript'
-
-"NeoBundle 'corntrace/bufexplorer'
-"NeoBundle 'scrooloose/nerdtree'
-"NeoBundle 'chriskempson/base16-vim'
-"NeoBundle 'bling/vim-bufferline'
 
 " I do not have working DLL for Windows
 if !has('win32')
@@ -258,6 +256,11 @@ let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
 
 " NerdTree ------------------------------
 noremap <Leader>n :NERDTreeToggle<CR>
+let NERDTreeShowBookmarks=1
+let NERDTreeChDirMode=1
+" a single click will open any node
+let NERDTreeMouseMode=3
+let NERDTreeMinimalUI=1
 
 " Syntastic -----------------------------
 let g:syntastic_always_populate_loc_list = 1

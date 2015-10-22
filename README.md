@@ -42,9 +42,7 @@ Vim Configuration
 *  [vim-avr] (https://github.com/VelkyVenik/vim-avr)
 *  [autoformat] (https://github.com/Chiel92/vim-autoformat) (requires formating tools, e.g. npm install -g js-beautify)
 *  [vim-javascript] (https://github.com/pangloss/vim-javascript)
+*  [nerdtree] (https://github.com/scrooloose/nerdtree)
+*  [nerdtree-git-plugin] (https://github.com/Xuyuanp/nerdtree-git-plugin)
 
 ## Unused plugins
-*  [bufexplorer] (https://github.com/corntrace/bufexplorer)
-*  [vim-bufferline] (https://github.com/bling/vim-bufferline)
-*  [nerdtree] (https://github.com/scrooloose/nerdtree)
-*  [base16-vim] (https://github.com/chriskempson/base16-vim)
