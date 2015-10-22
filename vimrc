@@ -269,7 +269,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 " ignore empty tags
 let g:syntastic_html_tidy_ignore_errors = [ 'trimming empty' ] 
-"let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_javascript_checkers = ['eslint']
 
 " AirLine -------------------------------
 if has('gui_running') && has('mac')
