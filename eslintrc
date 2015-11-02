@@ -1,8 +1,5 @@
 {
     "rules": {
-        "indent": [
-            4
-        ],
         "quotes": [
             2,
         "single"
