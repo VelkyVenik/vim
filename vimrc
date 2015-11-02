@@ -303,6 +303,9 @@ let g:pymode_rope_goto_definition_bind = '<leader>pg'
 
 " VIM-AUTOFORMAT ------------------------
 noremap <Leader>af :Autoformat<CR>
+" Do not touch JSX - Pass E4X xml literals through untouched
+let g:formatdef_jsbeautify_javascript = '"js-beautify -X -f - -".(&expandtab ? "s ".shiftwidth() : "t").(&textwidth ? " -w ".&textwidth : "")'
+
 
 " CtrlSpace
 if executable("ag")
