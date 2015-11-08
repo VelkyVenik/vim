@@ -8,6 +8,7 @@
             2,
         "unix"
         ],
+        "no-console": 0,
         "no-unused-vars": [2, {"vars": "all", "args": "none"}],
         "react/display-name": 0,
         "react/forbid-prop-types": 1,
