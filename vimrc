@@ -48,12 +48,13 @@ NeoBundle 'Xuyuanp/nerdtree-git-plugin'
 "NeoBundle 'jistr/vim-nerdtree-tabs'
 NeoBundle 'sjl/gundo.vim/'
 
-NeoBundleLazy 'kchmck/vim-coffee-script'
-NeoBundleLazy 'klen/python-mode.git'
-NeoBundleLazy 'dag/vim-fish'
-NeoBundleLazy 'VelkyVenik/vim-avr'
-NeoBundleLazy 'pangloss/vim-javascript'
-NeoBundleLazy 'ternjs/tern_for_vim'
+NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'klen/python-mode.git'
+NeoBundle 'dag/vim-fish'
+NeoBundle 'VelkyVenik/vim-avr'
+NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'ternjs/tern_for_vim'
+NeoBundle 'digitaltoad/vim-jade'
 
 " I do not have working DLL for Windows
 if !has('win32')
@@ -275,7 +276,7 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 " ignore empty tags
-let g:syntastic_html_tidy_ignore_errors = [ 'trimming empty' ] 
+let g:syntastic_html_tidy_ignore_errors = [ 'trimming empty' ]
 let g:syntastic_javascript_checkers = ['eslint']
 
 " AirLine -------------------------------
