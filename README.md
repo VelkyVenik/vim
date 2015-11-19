@@ -10,6 +10,7 @@ Vim Configuration
 * ,n            Toggle NerdTree
 * ,ci           Toggle comment
 * ,af           AutoFormat
+* ,u            Gundo
 * C-k           NeoSnippet
 
 ### CtrlSpace
@@ -49,6 +50,7 @@ Vim Configuration
 *  [nerdtree] (https://github.com/scrooloose/nerdtree)
 *  [nerdtree-git-plugin] (https://github.com/Xuyuanp/nerdtree-git-plugin)
 *  [vim-tern] (https://github.com/ternjs/tern_for_vim) (npm install && npm install tern-node-express in plugin directory)
+*  [Gundo] (https://github.com/sjl/gundo.vim/)
 
 ## Unused plugins
 *  [ctrlp.vim] (http://kien.github.io/ctrlp.vim/)

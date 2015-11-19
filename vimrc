@@ -46,6 +46,7 @@ NeoBundle 'trusktr/seti.vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'Xuyuanp/nerdtree-git-plugin'
 "NeoBundle 'jistr/vim-nerdtree-tabs'
+NeoBundle 'sjl/gundo.vim/'
 
 NeoBundleLazy 'kchmck/vim-coffee-script'
 NeoBundleLazy 'klen/python-mode.git'
@@ -319,3 +320,7 @@ nnoremap <silent><C-p> :CtrlSpace O<CR>
 imap <C-k>     <Plug>(neosnippet_expand_or_jump)
 smap <C-k>     <Plug>(neosnippet_expand_or_jump)
 xmap <C-k>     <Plug>(neosnippet_expand_target)
+
+" GUndo
+noremap <Leader>u :GundoToggle<CR>
+
