@@ -10,6 +10,7 @@ Vim Configuration
 * ,n            Toggle NerdTree
 * ,ci           Toggle comment
 * ,af           AutoFormat
+* C-k           NeoSnippet
 
 ### CtrlSpace
 * Ctrl P       Fuzzy file search 

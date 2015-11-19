@@ -312,3 +312,8 @@ if executable("ag")
     let g:CtrlSpaceGlobCommand = 'ag -l --nocolor -g ""'
 endif
 nnoremap <silent><C-p> :CtrlSpace O<CR>
+
+" NeoSnippet
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-k>     <Plug>(neosnippet_expand_target)
