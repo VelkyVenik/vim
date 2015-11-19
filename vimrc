@@ -157,6 +157,9 @@ noremap <leader>gp :Gpush<cr>
 
 noremap <leader>sh :VimShell<cr>
 
+noremap <leader><Left> :bp<CR>
+noremap <leader><Right> :bn<CR>
+
 let g:gitgutter_map_keys = 0    " Disable GitGutter shortcuts"
 
 
@@ -280,6 +283,9 @@ if has('gui_running') && has('mac')
     " use Powerline fonts - must be installed from font bundle
     let g:airline_powerline_fonts = 1
 endif
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme = 'bubblegum'
+
 
 " Vim-Go
 au FileType go nmap <leader>gr <Plug>(go-run)

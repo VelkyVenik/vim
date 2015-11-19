@@ -12,6 +12,8 @@ Vim Configuration
 * ,af           AutoFormat
 * ,u            Gundo
 * C-k           NeoSnippet
+* ,<Left>       Previous Buffer
+* ,<Right>      Next Buffer
 
 ### CtrlSpace
 * Ctrl P       Fuzzy file search 
