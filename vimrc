@@ -134,7 +134,8 @@ if has("gui_running")
     "set guifont=Menlo\ Regular:h14  " default font
     set guifont=Droid\ Sans\ Mono\ Dotted\ for\ Powerline:h14
     set guioptions-=T               "remove toolbar
-    set guioptions-=r               "remove right-hand scroll ba
+    set guioptions-=r               "remove right-hand scroll bar
+    set guioptions-=L               "remove left-hand scroll bar
     set guioptions-=m               "remove menu bar
 
     set background=dark             " colors
