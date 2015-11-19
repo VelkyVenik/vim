@@ -130,7 +130,8 @@ set laststatus=2        " show statusline with AirLine
 if has("gui_running")
     set lines=70 columns=150        " window size
 
-    set guifont=Menlo\ Regular:h14  " default font
+    "set guifont=Menlo\ Regular:h14  " default font
+    set guifont=Droid\ Sans\ Mono\ Dotted\ for\ Powerline:h14
     set guioptions-=T               "remove toolbar
     set guioptions-=r               "remove right-hand scroll ba
     set guioptions-=m               "remove menu bar
