@@ -48,6 +48,7 @@ Vim Configuration
 *  [vim-javascript] (https://github.com/pangloss/vim-javascript)
 *  [nerdtree] (https://github.com/scrooloose/nerdtree)
 *  [nerdtree-git-plugin] (https://github.com/Xuyuanp/nerdtree-git-plugin)
+*  [vim-tern] (https://github.com/ternjs/tern_for_vim) (npm install && npm install tern-node-express in plugin directory)
 
 ## Unused plugins
 *  [ctrlp.vim] (http://kien.github.io/ctrlp.vim/)

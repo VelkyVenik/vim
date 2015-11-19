@@ -52,6 +52,7 @@ NeoBundleLazy 'klen/python-mode.git'
 NeoBundleLazy 'dag/vim-fish'
 NeoBundleLazy 'VelkyVenik/vim-avr'
 NeoBundleLazy 'pangloss/vim-javascript'
+NeoBundleLazy 'ternjs/tern_for_vim'
 
 " I do not have working DLL for Windows
 if !has('win32')
@@ -237,7 +238,8 @@ inoremap <expr><Space> pumvisible() ? neocomplete#close_popup() : "\<Space>"
 " Enable omni completion.
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+"autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType javascript setlocal omnifunc=tern#Complete
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 

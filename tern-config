@@ -1,0 +1,10 @@
+{
+  "libs": [
+      "underscore"
+  ],
+  "plugins": {
+    "node": {},
+    "complete_strings": {},
+    "node-express": {}
+  }
+}
