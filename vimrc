@@ -54,7 +54,6 @@ NeoBundle 'klen/python-mode.git'
 NeoBundle 'dag/vim-fish'
 NeoBundle 'VelkyVenik/vim-avr'
 NeoBundle 'pangloss/vim-javascript'
-NeoBundle 'ternjs/tern_for_vim'
 NeoBundle 'digitaltoad/vim-jade'
 
 " I do not have working DLL for Windows
