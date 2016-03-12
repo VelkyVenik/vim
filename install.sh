@@ -2,7 +2,6 @@
 
 D=$(pwd)
 
-ln -s $D/vim ~/.vim
 ln -s $D/vimrc ~/.vimrc
 ln -s $D/eslintrc ~/.eslintrc
 
