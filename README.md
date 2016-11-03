@@ -14,6 +14,7 @@ Vim Configuration
 * C-k           NeoSnippet
 * ,<Left>       Previous Buffer
 * ,<Right>      Next Buffer
+* C-W, (S|v)    Split window horizontally|vertically
 
 ### CtrlSpace
 * Ctrl P       Fuzzy file search 
@@ -53,6 +54,7 @@ Vim Configuration
 *  [nerdtree-git-plugin] (https://github.com/Xuyuanp/nerdtree-git-plugin)
 *  [vim-tern] (https://github.com/ternjs/tern_for_vim) (npm install && npm install tern-node-express in plugin directory)
 *  [Gundo] (https://github.com/sjl/gundo.vim/)
+*  [Rust] (https://github.com/rust-lang/rust.vim)
 
 ## Unused plugins
 *  [ctrlp.vim] (http://kien.github.io/ctrlp.vim/)
