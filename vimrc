@@ -1,7 +1,7 @@
 if has('win32')
     " I have problems with my company Windows notebook with the home folder, it's
     " on network so Vim is very very very slow then :(
-	let $HOME = $USERPROFILE
+    let $HOME = $USERPROFILE
 
     set langmenu=en_US.UTF-8    " sets the language of the menu (gvim)
 else
@@ -11,12 +11,12 @@ endif
 "NeoBundle Scripts-----------------------------
 
 if has('vim_starting')
-  if &compatible
-    set nocompatible               " Be iMproved
-  endif
+    if &compatible
+        set nocompatible               " Be iMproved
+    endif
 
-  " Required:
-  set runtimepath+=$HOME/.vim/bundle/neobundle.vim/
+    " Required:
+    set runtimepath+=$HOME/.vim/bundle/neobundle.vim/
 endif
 
 " Required:
@@ -29,26 +29,27 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " Add or remove your Bundles here:
 NeoBundle 'Shougo/neosnippet.vim'
 NeoBundle 'Shougo/neosnippet-snippets'
+NeoBundle 'honza/vim-snippets'
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'Chiel92/vim-autoformat'
 NeoBundle 'vim-airline/vim-airline'
 NeoBundle 'vim-airline/vim-airline-themes'
-"NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'gregsexton/gitv'
 NeoBundle 'powerline/fonts'
 NeoBundle 'mileszs/ack.vim'
-NeoBundle 'fatih/vim-go'
 NeoBundle 'jiangmiao/auto-pairs'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'szw/vim-ctrlspace'
 NeoBundle 'trusktr/seti.vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'Xuyuanp/nerdtree-git-plugin'
-"NeoBundle 'jistr/vim-nerdtree-tabs'
 NeoBundle 'sjl/gundo.vim/'
+NeoBundle 'junegunn/goyo.vim'
 
+NeoBundle 'fatih/vim-go'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'klen/python-mode.git'
 NeoBundle 'dag/vim-fish'
@@ -61,14 +62,14 @@ NeoBundle 'rust-lang/rust.vim'
 if !has('win32')
     NeoBundle 'Shougo/vimshell'
     NeoBundle 'Shougo/vimproc.vim', {
-            \ 'build' : {
-            \     'windows' : 'tools\\update-dll-mingw',
-            \     'cygwin' : 'make -f make_cygwin.mak',
-            \     'mac' : 'make -f make_mac.mak',
-            \     'linux' : 'make',
-            \     'unix' : 'gmake',
-            \    },
-            \ }
+                \ 'build' : {
+                \     'windows' : 'tools\\update-dll-mingw',
+                \     'cygwin' : 'make -f make_cygwin.mak',
+                \     'mac' : 'make -f make_mac.mak',
+                \     'linux' : 'make',
+                \     'unix' : 'gmake',
+                \    },
+                \ }
 endif
 
 " Required:
@@ -95,7 +96,7 @@ set softtabstop=4       " how many spaces for tab
 
 set nowrap              " don't wrap lines
 set backspace=indent,eol,start
-                        " allow backspacing over everything in insert mode
+" allow backspacing over everything in insert mode
 set autoindent          " always set autoindenting on
 set copyindent          " copy the previous indentation on autoindenting
 set number              " always show line numbers
@@ -103,14 +104,14 @@ set number              " always show line numbers
 
 set ignorecase          " ignore case when searching
 set smartcase           " ignore case if search pattern is all lowercase,
-                        " case-sensitive otherwise
+" case-sensitive otherwise
 set smarttab            " insert tabs on the start of a line according to
-                        "  shiftwidth, not tabstop
+"  shiftwidth, not tabstop
 set hlsearch            " highlight search terms
 set incsearch           " show search matches as you type
 set showmatch           " set show matching parenthesis
 nnoremap <leader><space> :noh<cr>
-                        " hide search highlighting
+" hide search highlighting
 set gdefault            " applies substitutions globally on lines - :%s/foo/bar/g
 
 
@@ -132,8 +133,8 @@ set laststatus=2        " show statusline with AirLine
 if has("gui_running")
     set lines=70 columns=150        " window size
 
-    set guifont=Menlo\ Regular:h14  " default font
-    "set guifont=Droid\ Sans\ Mono\ Dotted\ for\ Powerline:h14
+    "set guifont=Menlo\ Regular:h14  " default font
+    set guifont=Droid\ Sans\ Mono\ Dotted\ for\ Powerline:h14
     set guioptions-=T               "remove toolbar
     set guioptions-=r               "remove right-hand scroll bar
     set guioptions-=L               "remove left-hand scroll bar
@@ -166,20 +167,7 @@ noremap <leader><Right> :bn<CR>
 let g:gitgutter_map_keys = 0    " Disable GitGutter shortcuts"
 
 
-" CtrlP configuration ----------------------
-"let g:ctrlp_map = '<c-p>'
-"let g:ctrlp_cmd = 'CtrlPBuffer'
-
-"let g:ctrlp_working_path_mode = 'ra'
-
-"set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
-"set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
-
-"let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
-
-
 " NeoComplete -------------------------------
-" Disable AutoComplPop.
 let g:acp_enableAtStartup = 1
 " Use neocomplete.
 let g:neocomplete#enable_at_startup = 1
@@ -191,10 +179,10 @@ let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
 
 " Define dictionary.
 let g:neocomplete#sources#dictionary#dictionaries = {
-    \ 'default' : '',
-    \ 'vimshell' : $HOME.'/.vimshell_hist',
-    \ 'scheme' : $HOME.'/.gosh_completions'
-        \ }
+            \ 'default' : '',
+            \ 'vimshell' : $HOME.'/.vimshell_hist',
+            \ 'scheme' : $HOME.'/.gosh_completions'
+            \ }
 
 " Define keyword.
 if !exists('g:neocomplete#keyword_patterns')
@@ -210,9 +198,9 @@ inoremap <expr><C-l>     neocomplete#complete_common_string()
 " <CR>: close popup and save indent.
 inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
 function! s:my_cr_function()
-  "return neocomplete#close_popup() . "\<CR>"
-  " For no inserting <CR> key.
-  return pumvisible() ? neocomplete#close_popup() : "\<CR>"
+    "return neocomplete#close_popup() . "\<CR>"
+    " For no inserting <CR> key.
+    return pumvisible() ? neocomplete#close_popup() : "\<CR>"
 endfunction
 " <TAB>: completion.
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
@@ -224,25 +212,6 @@ inoremap <expr><C-e>  neocomplete#cancel_popup()
 " Close popup by <Space>.
 inoremap <expr><Space> pumvisible() ? neocomplete#close_popup() : "\<Space>"
 
-" For cursor moving in insert mode(Not recommended)
-"inoremap <expr><Left>  neocomplete#close_popup() . "\<Left>"
-"inoremap <expr><Right> neocomplete#close_popup() . "\<Right>"
-"inoremap <expr><Up>    neocomplete#close_popup() . "\<Up>"
-"inoremap <expr><Down>  neocomplete#close_popup() . "\<Down>"
-" Or set this.
-"let g:neocomplete#enable_cursor_hold_i = 1
-" Or set this.
-"let g:neocomplete#enable_insert_char_pre = 1
-
-" AutoComplPop like behavior.
-"let g:neocomplete#enable_auto_select = 1
-
-" Shell like behavior(not recommended).
-"set completeopt+=longest
-"let g:neocomplete#enable_auto_select = 1
-"let g:neocomplete#disable_auto_complete = 1
-"inoremap <expr><TAB>  pumvisible() ? "\<Down>" : "\<C-x>\<C-u>"
-
 " Enable omni completion.
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
@@ -253,7 +222,7 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
 " Enable heavy omni completion.
 if !exists('g:neocomplete#sources#omni#input_patterns')
-  let g:neocomplete#sources#omni#input_patterns = {}
+    let g:neocomplete#sources#omni#input_patterns = {}
 endif
 "let g:neocomplete#sources#omni#input_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
 "let g:neocomplete#sources#omni#input_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
@@ -262,7 +231,6 @@ endif
 " For perlomni.vim setting.
 " https://github.com/c9s/perlomni.vim
 let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
-
 
 " NerdTree ------------------------------
 noremap <Leader>n :NERDTreeToggle<CR>
@@ -281,6 +249,15 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_html_tidy_ignore_errors = [ 'trimming empty' ]
 let g:syntastic_javascript_checkers = ['eslint']
 
+let g:syntastic_error_symbol = '✗'
+let g:syntastic_style_error_symbol = '✠'
+let g:syntastic_warning_symbol = '∆'
+let g:syntastic_style_warning_symbol = '≈'
+
+" Get all error from Syntastic for go files
+autocmd FileType go let g:syntastic_aggregate_errors = 1
+autocmd FileType go let g:syntastic_go_checkers = ["go", "govet", "golint"]
+
 " AirLine -------------------------------
 if has('gui_running') && has('mac')
     " use Powerline fonts - must be installed from font bundle
@@ -288,7 +265,6 @@ if has('gui_running') && has('mac')
 endif
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme = 'bubblegum'
-
 
 " Vim-Go
 au FileType go nmap <leader>gr <Plug>(go-run)
@@ -300,16 +276,21 @@ au FileType go nmap <Leader>gds <Plug>(go-def-split)
 au FileType go nmap <Leader>gdv <Plug>(go-def-vertical)
 au FileType go nmap <Leader>gdt <Plug>(go-def-tab)
 
-au FileType go nmap <Leader>gs <Plug>(go-implements)
+"au FileType go nmap <Leader>gs <Plug>(go-implements)
 
 " Syntax highlighting, does it work? :)
-let g:go_highlight_functions = 0
-let g:go_highlight_methods = 0
-let g:go_highlight_structs = 0
-let g:go_highlight_operators = 0
-let g:go_highlight_build_constraints = 0
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
 
 let g:go_fmt_fail_silently = 1          " Use syntastic instead
+let g:go_auto_type_info = 1             " Show function/variable type automaticaly
+
+let g:go_snippet_engine = "neosnippet"
+
+set completeopt-=preview
 
 " Python-Mode
 let g:pymode_rope_goto_definition_bind = '<leader>pg'
@@ -331,6 +312,39 @@ imap <C-k>     <Plug>(neosnippet_expand_or_jump)
 smap <C-k>     <Plug>(neosnippet_expand_or_jump)
 xmap <C-k>     <Plug>(neosnippet_expand_target)
 
+let g:neosnippet#snippets_directory="~/.vim/bundle/vim-snippets/snippets,~/.vim/snippets"
+let g:neosnippet#snippets_directory .= "," . globpath(&rtp, "gosnippets/snippets")
+let g:neosnippet#enable_snipmate_compatibility=1
+
 " GUndo
 noremap <Leader>u :GundoToggle<CR>
+
+" Goyo
+nnoremap <silent> <leader>z :Goyo<CR>
+
+let g:goyo_width = 80%
+let g:goyo_height =80%
+
+function! s:goyo_enter()
+    if has('gui_running')
+        set fullscreen
+        "set background=light
+        set linespace=7
+    elseif exists('$TMUX')
+        silent !tmux set status off
+    endif
+endfunction
+
+function! s:goyo_leave()
+    if has('gui_running')
+        set nofullscreen
+        "set background=dark
+        set linespace=0
+    elseif exists('$TMUX')
+        silent !tmux set status on
+    endif
+endfunction
+
+autocmd! User GoyoEnter nested call <SID>goyo_enter()
+autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
