@@ -95,6 +95,7 @@ set expandtab           " replace tab with spaces
 set softtabstop=4       " how many spaces for tab
 
 set nowrap              " don't wrap lines
+set nofoldenable        " do not fold blocks
 set backspace=indent,eol,start
 " allow backspacing over everything in insert mode
 set autoindent          " always set autoindenting on
@@ -246,7 +247,7 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 " ignore empty tags
-let g:syntastic_html_tidy_ignore_errors = [ 'trimming empty' ]
+let g:syntastic_html_tidy_ignore_errors = [ 'trimming empty', '> proprietary attribute "' ]
 let g:syntastic_javascript_checkers = ['eslint']
 
 let g:syntastic_error_symbol = '✗'
@@ -322,8 +323,8 @@ noremap <Leader>u :GundoToggle<CR>
 " Goyo
 nnoremap <silent> <leader>z :Goyo<CR>
 
-let g:goyo_width = 80%
-let g:goyo_height =80%
+let g:goyo_width = '80%'
+let g:goyo_height ='80%'
 
 function! s:goyo_enter()
     if has('gui_running')
